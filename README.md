@@ -1,8 +1,8 @@
 # Rocket
 Build Komurin 2018 Rocket From Zero Univ. Wahid Hasyim
 .
-#Design and Parts 3D
-https://github.com/aanfaisal/Rocket/tree/master/3D%20Parts%20and%20Design
+# Design and Parts 3D
+https://github.com/aanfaisal/Rocket/tree/master/3DPartsandDesign
 .
 .
 .
