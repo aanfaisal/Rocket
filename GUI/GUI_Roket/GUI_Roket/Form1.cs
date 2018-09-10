@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI_Roket
 {
-    public partial class Form1 : Form
+    public partial class GCS : Form
     {
-        public Form1()
+        public GCS()
         {
             InitializeComponent();
         }
@@ -22,6 +22,6 @@ namespace GUI_Roket
 
         }
 
-       
+        
     }
 }

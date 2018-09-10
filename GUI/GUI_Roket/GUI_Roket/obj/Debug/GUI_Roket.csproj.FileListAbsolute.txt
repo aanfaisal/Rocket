@@ -1,1 +1,10 @@
 D:\_Rocket\GUI\GUI_Roket\GUI_Roket\bin\Debug\GUI_Roket.exe.config
+D:\_Rocket\GUI\GUI_Roket\GUI_Roket\bin\Debug\GUI_Roket.exe
+D:\_Rocket\GUI\GUI_Roket\GUI_Roket\bin\Debug\GUI_Roket.pdb
+D:\_Rocket\GUI\GUI_Roket\GUI_Roket\obj\Debug\GUI_Roket.csprojAssemblyReference.cache
+D:\_Rocket\GUI\GUI_Roket\GUI_Roket\obj\Debug\GUI_Roket.Properties.Resources.resources
+D:\_Rocket\GUI\GUI_Roket\GUI_Roket\obj\Debug\GUI_Roket.csproj.GenerateResource.cache
+D:\_Rocket\GUI\GUI_Roket\GUI_Roket\obj\Debug\GUI_Roket.csproj.CoreCompileInputs.cache
+D:\_Rocket\GUI\GUI_Roket\GUI_Roket\obj\Debug\GUI_Roket.exe
+D:\_Rocket\GUI\GUI_Roket\GUI_Roket\obj\Debug\GUI_Roket.pdb
+D:\_Rocket\GUI\GUI_Roket\GUI_Roket\obj\Debug\GUI_Roket.GCS.resources
