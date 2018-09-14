@@ -65,5 +65,20 @@ namespace GUI_Roket
             this.Invoke(new EventHandler(display));
             j++;
         }
+
+        private void display(object sender, EventArgs e)
+        {
+            data1 = data.Substring(0, 1);
+            data2 = data.Substring(2, 1);
+            data3 = data.Substring(4, 1);
+            kalender = DateTime.Now;
+            string time = kalender.Hour + ":" + kalender.Minute + ":" + kalender.Second;
+            //progressBar1.Value = Convert.ToInt32((Convert.ToInt32(data1) + Convert.ToInt32(data2) + Convert.ToInt32(data3)) / 3);
+            //richTextBox1.AppendText(time + "\t\t" + data + "\n");
+            //richTextBox2.Text = "Koneksi Arduino Sukses !";
+            this.chart1.Series["Data1"].Points.AddXY(j, Convert.ToInt32(data1));
+            this.chart1.Series["Data2"].Points.AddXY(j, Convert.ToInt32(data2));
+            this.chart1.Series["Data3"].Points.AddXY(j, Convert.ToInt32(data3));
+        }
     }
 }
