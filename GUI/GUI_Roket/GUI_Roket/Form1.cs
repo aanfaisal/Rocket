@@ -80,5 +80,15 @@ namespace GUI_Roket
             this.chart1.Series["Data2"].Points.AddXY(j, Convert.ToInt32(data2));
             this.chart1.Series["Data3"].Points.AddXY(j, Convert.ToInt32(data3));
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            button1.Enabled = true;
+            button2.Enabled = false;
+            //button3.Enabled = false;
+            //button4.Enabled = true;
+            myport.Close();
+            //richTextBox2.Text = "Koneksi Arduino Terputus !";
+        }
     }
 }
