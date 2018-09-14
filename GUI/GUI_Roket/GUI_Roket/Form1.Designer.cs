@@ -190,7 +190,6 @@
             "38400",
             "57600",
             "115200"});
-
             this.comboBox2.Location = new System.Drawing.Point(3, 30);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(197, 21);
@@ -323,7 +322,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::GUI_Roket.Properties.Resources.IndicatorHeading;
-            this.pictureBox4.Location = new System.Drawing.Point(1152, 53);
+            this.pictureBox4.Location = new System.Drawing.Point(1162, 53);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(186, 178);
             this.pictureBox4.TabIndex = 13;
@@ -332,7 +331,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::GUI_Roket.Properties.Resources.IndicatorAttitude;
-            this.pictureBox3.Location = new System.Drawing.Point(965, 53);
+            this.pictureBox3.Location = new System.Drawing.Point(975, 53);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(186, 178);
             this.pictureBox3.TabIndex = 12;
@@ -343,7 +342,7 @@
             this.pictureBox2.Image = global::GUI_Roket.Properties.Resources.IndicatorAirSpeed;
             this.pictureBox2.Location = new System.Drawing.Point(787, 53);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(172, 178);
+            this.pictureBox2.Size = new System.Drawing.Size(186, 178);
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
             // 
