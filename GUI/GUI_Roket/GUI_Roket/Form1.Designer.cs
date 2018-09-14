@@ -275,7 +275,7 @@
             // 
             // webBrowser1
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(238, 56);
+            this.webBrowser1.Location = new System.Drawing.Point(229, 53);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(552, 391);
@@ -287,47 +287,47 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(238, 453);
+            this.chart1.Location = new System.Drawing.Point(229, 453);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(552, 212);
+            this.chart1.Size = new System.Drawing.Size(552, 234);
             this.chart1.TabIndex = 10;
             this.chart1.Text = "chart1";
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::GUI_Roket.Properties.Resources.IndicatorHeading;
-            this.pictureBox4.Location = new System.Drawing.Point(813, 465);
+            this.pictureBox4.Location = new System.Drawing.Point(1152, 53);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox4.Size = new System.Drawing.Size(186, 178);
             this.pictureBox4.TabIndex = 13;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::GUI_Roket.Properties.Resources.IndicatorAttitude;
-            this.pictureBox3.Location = new System.Drawing.Point(813, 259);
+            this.pictureBox3.Location = new System.Drawing.Point(965, 53);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox3.Size = new System.Drawing.Size(186, 178);
             this.pictureBox3.TabIndex = 12;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::GUI_Roket.Properties.Resources.IndicatorAirSpeed;
-            this.pictureBox2.Location = new System.Drawing.Point(813, 53);
+            this.pictureBox2.Location = new System.Drawing.Point(787, 53);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox2.Size = new System.Drawing.Size(172, 178);
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::GUI_Roket.Properties.Resources.Unwahas;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 469);
+            this.pictureBox1.Location = new System.Drawing.Point(23, 491);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(200, 196);
             this.pictureBox1.TabIndex = 5;
