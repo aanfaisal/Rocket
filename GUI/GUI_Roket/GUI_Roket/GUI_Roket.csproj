@@ -85,7 +85,7 @@
     <None Include="Resources\Unwahas.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\IndicatorAirSpeed.png" />
+    <Resource Include="Resources\IndicatorAirSpeed.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\IndicatorAttitude.png" />
