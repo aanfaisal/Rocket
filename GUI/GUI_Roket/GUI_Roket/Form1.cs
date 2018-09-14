@@ -23,7 +23,7 @@ namespace GUI_Roket
         private string data3;
         private int j;
         private string simpan;
-        private SerialDataReceivedEventHandler terima;
+        //private SerialDataReceivedEventHandler terima;
 
         public GCS()
         {
@@ -57,6 +57,13 @@ namespace GUI_Roket
             //button2.Enabled = false;
             //button3.Enabled = true;
             //button4.Enabled = false;
+        }
+
+        void terima(object sender, SerialDataReceivedEventArgs e)
+        {
+            data = myport.ReadLine();
+            this.Invoke(new EventHandler(display));
+            j++;
         }
     }
 }
