@@ -8,3 +8,4 @@ D:\_Rocket\GUI\GUI_Roket\GUI_Roket\obj\Debug\GUI_Roket.csproj.CoreCompileInputs.
 D:\_Rocket\GUI\GUI_Roket\GUI_Roket\obj\Debug\GUI_Roket.exe
 D:\_Rocket\GUI\GUI_Roket\GUI_Roket\obj\Debug\GUI_Roket.pdb
 D:\_Rocket\GUI\GUI_Roket\GUI_Roket\obj\Debug\GUI_Roket.GCS.resources
+D:\_Rocket\GUI\GUI_Roket\GUI_Roket\obj\Debug\GUI_Roket.g.resources
