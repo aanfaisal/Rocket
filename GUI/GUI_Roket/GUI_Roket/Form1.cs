@@ -90,5 +90,6 @@ namespace GUI_Roket
             myport.Close();
             //richTextBox2.Text = "Koneksi Arduino Terputus !";
         }
+
     }
 }
