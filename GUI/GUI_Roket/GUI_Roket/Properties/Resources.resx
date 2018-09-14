@@ -121,4 +121,16 @@
   <data name="Unwahas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Unwahas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="IndicatorJarumHeading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IndicatorJarumHeading.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IndicatorAttitude" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IndicatorAttitude.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IndicatorAirSpeed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IndicatorAirSpeed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IndicatorHeading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IndicatorHeading.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

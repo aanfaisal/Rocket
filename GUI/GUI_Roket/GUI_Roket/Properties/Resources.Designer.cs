@@ -63,6 +63,46 @@ namespace GUI_Roket.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap IndicatorAirSpeed {
+            get {
+                object obj = ResourceManager.GetObject("IndicatorAirSpeed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IndicatorAttitude {
+            get {
+                object obj = ResourceManager.GetObject("IndicatorAttitude", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IndicatorHeading {
+            get {
+                object obj = ResourceManager.GetObject("IndicatorHeading", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IndicatorJarumHeading {
+            get {
+                object obj = ResourceManager.GetObject("IndicatorJarumHeading", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Unwahas {
             get {
                 object obj = ResourceManager.GetObject("Unwahas", resourceCulture);

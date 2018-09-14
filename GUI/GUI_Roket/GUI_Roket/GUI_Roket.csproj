@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -82,6 +83,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Unwahas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IndicatorAirSpeed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IndicatorAttitude.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IndicatorJarumHeading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IndicatorHeading.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
