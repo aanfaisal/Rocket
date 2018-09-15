@@ -91,5 +91,6 @@ namespace GUI_Roket
             //richTextBox2.Text = "Koneksi Arduino Terputus !";
         }
 
+        
     }
 }
