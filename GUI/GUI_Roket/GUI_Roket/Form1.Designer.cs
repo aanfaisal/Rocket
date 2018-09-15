@@ -59,7 +59,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -79,35 +78,39 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(23, 195);
+            this.panel1.Location = new System.Drawing.Point(27, 195);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 252);
+            this.panel1.Size = new System.Drawing.Size(234, 252);
             this.panel1.TabIndex = 1;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(23, 215);
+            this.label8.Location = new System.Drawing.Point(27, 215);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(66, 13);
+            this.label8.Size = new System.Drawing.Size(91, 13);
             this.label8.TabIndex = 8;
             this.label8.Text = "Packet Error";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(23, 193);
+            this.label7.Location = new System.Drawing.Point(27, 193);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(97, 13);
+            this.label7.Size = new System.Drawing.Size(126, 13);
             this.label7.TabIndex = 7;
             this.label7.Text = "Packet\'s Received";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(23, 171);
+            this.label6.Location = new System.Drawing.Point(27, 171);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 13);
+            this.label6.Size = new System.Drawing.Size(105, 13);
             this.label6.TabIndex = 6;
             this.label6.Text = "Packet\'s Sent ";
             // 
@@ -115,7 +118,8 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(55, 12);
+            this.label5.Location = new System.Drawing.Point(64, 12);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(90, 24);
             this.label5.TabIndex = 3;
@@ -125,7 +129,8 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(21, 127);
+            this.label4.Location = new System.Drawing.Point(24, 127);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(46, 20);
             this.label4.TabIndex = 5;
@@ -135,7 +140,8 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(19, 91);
+            this.label3.Location = new System.Drawing.Point(22, 91);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 20);
             this.label3.TabIndex = 4;
@@ -145,7 +151,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(19, 48);
+            this.label2.Location = new System.Drawing.Point(22, 48);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 20);
             this.label2.TabIndex = 3;
@@ -171,9 +178,10 @@
             "COM11",
             "COM12",
             "COM13"});
-            this.comboBox1.Location = new System.Drawing.Point(3, 3);
+            this.comboBox1.Location = new System.Drawing.Point(4, 3);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(197, 21);
+            this.comboBox1.Size = new System.Drawing.Size(229, 21);
             this.comboBox1.TabIndex = 0;
             // 
             // comboBox2
@@ -191,16 +199,18 @@
             "38400",
             "57600",
             "115200"});
-            this.comboBox2.Location = new System.Drawing.Point(3, 30);
+            this.comboBox2.Location = new System.Drawing.Point(4, 30);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(197, 21);
+            this.comboBox2.Size = new System.Drawing.Size(229, 21);
             this.comboBox2.TabIndex = 7;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(51, 36);
+            this.label1.Location = new System.Drawing.Point(60, 36);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(149, 20);
             this.label1.TabIndex = 2;
@@ -209,9 +219,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(3, 57);
+            this.button1.Location = new System.Drawing.Point(4, 57);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 25);
+            this.button1.Size = new System.Drawing.Size(112, 25);
             this.button1.TabIndex = 3;
             this.button1.Text = "CONNECT";
             this.button1.UseVisualStyleBackColor = true;
@@ -219,9 +230,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(105, 57);
+            this.button2.Location = new System.Drawing.Point(124, 57);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 25);
+            this.button2.Size = new System.Drawing.Size(102, 25);
             this.button2.TabIndex = 4;
             this.button2.Text = "DISCONNECT";
             this.button2.UseVisualStyleBackColor = true;
@@ -229,9 +241,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(3, 88);
+            this.button3.Location = new System.Drawing.Point(4, 88);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(189, 39);
+            this.button3.Size = new System.Drawing.Size(220, 39);
             this.button3.TabIndex = 8;
             this.button3.Text = "EMERGENCY PARACHUTE";
             this.button3.UseVisualStyleBackColor = true;
@@ -244,6 +257,7 @@
             this.aboutToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
             this.menuStrip1.Size = new System.Drawing.Size(1350, 24);
             this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
@@ -288,26 +302,30 @@
             this.flowLayoutPanel1.Controls.Add(this.button1);
             this.flowLayoutPanel1.Controls.Add(this.button2);
             this.flowLayoutPanel1.Controls.Add(this.button3);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(23, 53);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(27, 53);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 136);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(234, 136);
             this.flowLayoutPanel1.TabIndex = 8;
             // 
             // webBrowser1
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(229, 53);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Location = new System.Drawing.Point(267, 53);
+            this.webBrowser1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(24, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(552, 391);
+            this.webBrowser1.Size = new System.Drawing.Size(644, 391);
             this.webBrowser1.TabIndex = 9;
             // 
             // chart1
             // 
+            this.chart1.BackColor = System.Drawing.Color.DimGray;
             chartArea1.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(229, 453);
+            this.chart1.Location = new System.Drawing.Point(267, 453);
+            this.chart1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
@@ -316,69 +334,65 @@
             series1.Legend = "Legend1";
             series1.Name = "Data1";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(552, 234);
+            this.chart1.Size = new System.Drawing.Size(644, 234);
             this.chart1.TabIndex = 10;
             this.chart1.Text = "chart1";
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::GUI_Roket.Properties.Resources.IndicatorHeading;
-            this.pictureBox4.Location = new System.Drawing.Point(1162, 53);
+            this.pictureBox4.Location = new System.Drawing.Point(1355, 53);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(186, 178);
+            this.pictureBox4.Size = new System.Drawing.Size(217, 178);
             this.pictureBox4.TabIndex = 13;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::GUI_Roket.Properties.Resources.IndicatorAttitude;
-            this.pictureBox3.Location = new System.Drawing.Point(975, 53);
+            this.pictureBox3.Location = new System.Drawing.Point(1138, 53);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(186, 178);
+            this.pictureBox3.Size = new System.Drawing.Size(217, 178);
             this.pictureBox3.TabIndex = 12;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::GUI_Roket.Properties.Resources.IndicatorAirSpeed;
-            this.pictureBox2.Location = new System.Drawing.Point(787, 53);
+            this.pictureBox2.Location = new System.Drawing.Point(918, 53);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(186, 178);
+            this.pictureBox2.Size = new System.Drawing.Size(217, 178);
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::GUI_Roket.Properties.Resources.Unwahas;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 491);
+            this.pictureBox1.Location = new System.Drawing.Point(27, 491);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 196);
+            this.pictureBox1.Size = new System.Drawing.Size(234, 196);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
             // progressBar1
             // 
             this.progressBar1.Location = new System.Drawing.Point(0, 720);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(1362, 10);
+            this.progressBar1.Size = new System.Drawing.Size(1589, 10);
             this.progressBar1.TabIndex = 14;
-            // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(800, 453);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(187, 94);
-            this.checkedListBox1.TabIndex = 15;
             // 
             // GCS
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1350, 729);
-            this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
@@ -390,7 +404,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
+            this.Font = new System.Drawing.Font("Fira Code", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "GCS";
             this.Text = "GROUND CONTROL SYSTEM ( G C S ) EDF ROCKET UNIVERSITAS WAHID HASYIM SEMARANG";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -439,7 +455,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
     }
 }
 
