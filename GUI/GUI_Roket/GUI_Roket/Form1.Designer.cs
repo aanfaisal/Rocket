@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,9 +44,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnEmergency = new System.Windows.Forms.Button();
+            this.btnDisconnect = new System.Windows.Forms.Button();
+            this.btnConnect = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -57,40 +57,40 @@
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtGPS = new System.Windows.Forms.TextBox();
+            this.txtEDF = new System.Windows.Forms.TextBox();
+            this.txtEMU = new System.Windows.Forms.TextBox();
+            this.txtPacRecei = new System.Windows.Forms.TextBox();
+            this.txtPacEror = new System.Windows.Forms.TextBox();
+            this.txtPacSent = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtHeading = new System.Windows.Forms.TextBox();
+            this.txtSpeed = new System.Windows.Forms.TextBox();
+            this.txtCompass = new System.Windows.Forms.TextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.txtNavstate = new System.Windows.Forms.TextBox();
+            this.txtGPSmode = new System.Windows.Forms.TextBox();
+            this.txtLongi = new System.Windows.Forms.TextBox();
+            this.txtLatt = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.chcYawAcc = new System.Windows.Forms.CheckBox();
+            this.chcPitchAcc = new System.Windows.Forms.CheckBox();
+            this.checkRollAcc = new System.Windows.Forms.CheckBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.chcYawGyro = new System.Windows.Forms.CheckBox();
+            this.chcPitchGyro = new System.Windows.Forms.CheckBox();
+            this.chcRollGyro = new System.Windows.Forms.CheckBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.chcYawMag = new System.Windows.Forms.CheckBox();
+            this.chcPitchMag = new System.Windows.Forms.CheckBox();
+            this.chcRollMag = new System.Windows.Forms.CheckBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -166,24 +166,25 @@
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(507, 369);
             this.webBrowser1.TabIndex = 9;
+            this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
             // 
             // chart1
             // 
             this.chart1.BackColor = System.Drawing.Color.DimGray;
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(7, 20);
             this.chart1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.IsVisibleInLegend = false;
-            series2.IsXValueIndexed = true;
-            series2.Legend = "Legend1";
-            series2.Name = "Data1";
-            this.chart1.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.IsVisibleInLegend = false;
+            series1.IsXValueIndexed = true;
+            series1.Legend = "Legend1";
+            series1.Name = "Data1";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(573, 234);
             this.chart1.TabIndex = 10;
             this.chart1.Text = "chart1";
@@ -236,40 +237,40 @@
             this.progressBar1.Size = new System.Drawing.Size(1589, 10);
             this.progressBar1.TabIndex = 14;
             // 
-            // button3
+            // btnEmergency
             // 
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button3.Location = new System.Drawing.Point(8, 104);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(220, 39);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "EMERGENCY PARACHUTE";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnEmergency.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnEmergency.Location = new System.Drawing.Point(8, 104);
+            this.btnEmergency.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnEmergency.Name = "btnEmergency";
+            this.btnEmergency.Size = new System.Drawing.Size(220, 39);
+            this.btnEmergency.TabIndex = 8;
+            this.btnEmergency.Text = "EMERGENCY PARACHUTE";
+            this.btnEmergency.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnDisconnect
             // 
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button2.Location = new System.Drawing.Point(130, 74);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(102, 25);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "DISCONNECT";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnDisconnect.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnDisconnect.Location = new System.Drawing.Point(130, 74);
+            this.btnDisconnect.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnDisconnect.Name = "btnDisconnect";
+            this.btnDisconnect.Size = new System.Drawing.Size(102, 25);
+            this.btnDisconnect.TabIndex = 4;
+            this.btnDisconnect.Text = "DISCONNECT";
+            this.btnDisconnect.UseVisualStyleBackColor = true;
+            this.btnDisconnect.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // btnConnect
             // 
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(6, 74);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 25);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "CONNECT";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnConnect.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnConnect.Location = new System.Drawing.Point(6, 74);
+            this.btnConnect.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnConnect.Name = "btnConnect";
+            this.btnConnect.Size = new System.Drawing.Size(112, 25);
+            this.btnConnect.TabIndex = 3;
+            this.btnConnect.Text = "CONNECT";
+            this.btnConnect.UseVisualStyleBackColor = true;
+            this.btnConnect.Click += new System.EventHandler(this.button1_Click);
             // 
             // comboBox2
             // 
@@ -387,10 +388,10 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.btnEmergency);
             this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnDisconnect);
+            this.groupBox1.Controls.Add(this.btnConnect);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox1.Location = new System.Drawing.Point(8, 40);
             this.groupBox1.Name = "groupBox1";
@@ -401,12 +402,12 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox13);
-            this.groupBox2.Controls.Add(this.textBox12);
-            this.groupBox2.Controls.Add(this.textBox11);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.txtGPS);
+            this.groupBox2.Controls.Add(this.txtEDF);
+            this.groupBox2.Controls.Add(this.txtEMU);
+            this.groupBox2.Controls.Add(this.txtPacRecei);
+            this.groupBox2.Controls.Add(this.txtPacEror);
+            this.groupBox2.Controls.Add(this.txtPacSent);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label3);
@@ -421,26 +422,47 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Status";
             // 
-            // textBox1
+            // txtGPS
             // 
-            this.textBox1.Location = new System.Drawing.Point(148, 134);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(63, 21);
-            this.textBox1.TabIndex = 12;
+            this.txtGPS.Location = new System.Drawing.Point(63, 75);
+            this.txtGPS.Name = "txtGPS";
+            this.txtGPS.Size = new System.Drawing.Size(147, 21);
+            this.txtGPS.TabIndex = 17;
             // 
-            // textBox2
+            // txtEDF
             // 
-            this.textBox2.Location = new System.Drawing.Point(148, 176);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(63, 21);
-            this.textBox2.TabIndex = 13;
+            this.txtEDF.Location = new System.Drawing.Point(63, 50);
+            this.txtEDF.Name = "txtEDF";
+            this.txtEDF.Size = new System.Drawing.Size(147, 21);
+            this.txtEDF.TabIndex = 16;
             // 
-            // textBox3
+            // txtEMU
             // 
-            this.textBox3.Location = new System.Drawing.Point(148, 155);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(63, 21);
-            this.textBox3.TabIndex = 14;
+            this.txtEMU.Location = new System.Drawing.Point(64, 24);
+            this.txtEMU.Name = "txtEMU";
+            this.txtEMU.Size = new System.Drawing.Size(147, 21);
+            this.txtEMU.TabIndex = 15;
+            // 
+            // txtPacRecei
+            // 
+            this.txtPacRecei.Location = new System.Drawing.Point(148, 155);
+            this.txtPacRecei.Name = "txtPacRecei";
+            this.txtPacRecei.Size = new System.Drawing.Size(63, 21);
+            this.txtPacRecei.TabIndex = 14;
+            // 
+            // txtPacEror
+            // 
+            this.txtPacEror.Location = new System.Drawing.Point(148, 176);
+            this.txtPacEror.Name = "txtPacEror";
+            this.txtPacEror.Size = new System.Drawing.Size(63, 21);
+            this.txtPacEror.TabIndex = 13;
+            // 
+            // txtPacSent
+            // 
+            this.txtPacSent.Location = new System.Drawing.Point(148, 134);
+            this.txtPacSent.Name = "txtPacSent";
+            this.txtPacSent.Size = new System.Drawing.Size(63, 21);
+            this.txtPacSent.TabIndex = 12;
             // 
             // groupBox3
             // 
@@ -466,9 +488,9 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.textBox6);
-            this.groupBox5.Controls.Add(this.textBox5);
-            this.groupBox5.Controls.Add(this.textBox4);
+            this.groupBox5.Controls.Add(this.txtHeading);
+            this.groupBox5.Controls.Add(this.txtSpeed);
+            this.groupBox5.Controls.Add(this.txtCompass);
             this.groupBox5.Controls.Add(this.pictureBox4);
             this.groupBox5.Controls.Add(this.pictureBox2);
             this.groupBox5.Controls.Add(this.pictureBox3);
@@ -480,34 +502,34 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Sensor";
             // 
-            // textBox4
+            // txtHeading
             // 
-            this.textBox4.Location = new System.Drawing.Point(74, 204);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(44, 21);
-            this.textBox4.TabIndex = 15;
+            this.txtHeading.Location = new System.Drawing.Point(438, 204);
+            this.txtHeading.Name = "txtHeading";
+            this.txtHeading.Size = new System.Drawing.Size(44, 21);
+            this.txtHeading.TabIndex = 17;
             // 
-            // textBox5
+            // txtSpeed
             // 
-            this.textBox5.Location = new System.Drawing.Point(260, 204);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(44, 21);
-            this.textBox5.TabIndex = 16;
+            this.txtSpeed.Location = new System.Drawing.Point(260, 204);
+            this.txtSpeed.Name = "txtSpeed";
+            this.txtSpeed.Size = new System.Drawing.Size(44, 21);
+            this.txtSpeed.TabIndex = 16;
             // 
-            // textBox6
+            // txtCompass
             // 
-            this.textBox6.Location = new System.Drawing.Point(438, 204);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(44, 21);
-            this.textBox6.TabIndex = 17;
+            this.txtCompass.Location = new System.Drawing.Point(74, 204);
+            this.txtCompass.Name = "txtCompass";
+            this.txtCompass.Size = new System.Drawing.Size(44, 21);
+            this.txtCompass.TabIndex = 15;
             // 
             // groupBox6
             // 
             this.groupBox6.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.groupBox6.Controls.Add(this.textBox10);
-            this.groupBox6.Controls.Add(this.textBox9);
-            this.groupBox6.Controls.Add(this.textBox8);
-            this.groupBox6.Controls.Add(this.textBox7);
+            this.groupBox6.Controls.Add(this.txtNavstate);
+            this.groupBox6.Controls.Add(this.txtGPSmode);
+            this.groupBox6.Controls.Add(this.txtLongi);
+            this.groupBox6.Controls.Add(this.txtLatt);
             this.groupBox6.Controls.Add(this.label10);
             this.groupBox6.Controls.Add(this.label9);
             this.groupBox6.Controls.Add(this.label5);
@@ -520,32 +542,33 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Waypoint ";
             // 
-            // label1
+            // txtNavstate
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Lattitude   :";
+            this.txtNavstate.Location = new System.Drawing.Point(112, 100);
+            this.txtNavstate.Name = "txtNavstate";
+            this.txtNavstate.Size = new System.Drawing.Size(90, 21);
+            this.txtNavstate.TabIndex = 7;
             // 
-            // label5
+            // txtGPSmode
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 47);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 13);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Longitude   :";
+            this.txtGPSmode.Location = new System.Drawing.Point(112, 74);
+            this.txtGPSmode.Name = "txtGPSmode";
+            this.txtGPSmode.Size = new System.Drawing.Size(90, 21);
+            this.txtGPSmode.TabIndex = 6;
             // 
-            // label9
+            // txtLongi
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(7, 76);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(98, 13);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "GPS Mode    :";
+            this.txtLongi.Location = new System.Drawing.Point(112, 47);
+            this.txtLongi.Name = "txtLongi";
+            this.txtLongi.Size = new System.Drawing.Size(90, 21);
+            this.txtLongi.TabIndex = 5;
+            // 
+            // txtLatt
+            // 
+            this.txtLatt.Location = new System.Drawing.Point(112, 21);
+            this.txtLatt.Name = "txtLatt";
+            this.txtLatt.Size = new System.Drawing.Size(90, 21);
+            this.txtLatt.TabIndex = 4;
             // 
             // label10
             // 
@@ -556,11 +579,38 @@
             this.label10.TabIndex = 3;
             this.label10.Text = "NAV. State  :";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(7, 76);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(98, 13);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "GPS Mode    :";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 47);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(98, 13);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Longitude   :";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Lattitude   :";
+            // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.checkBox3);
-            this.groupBox7.Controls.Add(this.checkBox2);
-            this.groupBox7.Controls.Add(this.checkBox1);
+            this.groupBox7.Controls.Add(this.chcYawAcc);
+            this.groupBox7.Controls.Add(this.chcPitchAcc);
+            this.groupBox7.Controls.Add(this.checkRollAcc);
             this.groupBox7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox7.Location = new System.Drawing.Point(925, 449);
             this.groupBox7.Name = "groupBox7";
@@ -569,11 +619,41 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Accelerometer";
             // 
+            // chcYawAcc
+            // 
+            this.chcYawAcc.AutoSize = true;
+            this.chcYawAcc.Location = new System.Drawing.Point(6, 87);
+            this.chcYawAcc.Name = "chcYawAcc";
+            this.chcYawAcc.Size = new System.Drawing.Size(47, 17);
+            this.chcYawAcc.TabIndex = 2;
+            this.chcYawAcc.Text = "YAW";
+            this.chcYawAcc.UseVisualStyleBackColor = true;
+            // 
+            // chcPitchAcc
+            // 
+            this.chcPitchAcc.AutoSize = true;
+            this.chcPitchAcc.Location = new System.Drawing.Point(6, 53);
+            this.chcPitchAcc.Name = "chcPitchAcc";
+            this.chcPitchAcc.Size = new System.Drawing.Size(61, 17);
+            this.chcPitchAcc.TabIndex = 1;
+            this.chcPitchAcc.Text = "PITCH";
+            this.chcPitchAcc.UseVisualStyleBackColor = true;
+            // 
+            // checkRollAcc
+            // 
+            this.checkRollAcc.AutoSize = true;
+            this.checkRollAcc.Location = new System.Drawing.Point(6, 20);
+            this.checkRollAcc.Name = "checkRollAcc";
+            this.checkRollAcc.Size = new System.Drawing.Size(54, 17);
+            this.checkRollAcc.TabIndex = 0;
+            this.checkRollAcc.Text = "ROLL";
+            this.checkRollAcc.UseVisualStyleBackColor = true;
+            // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.checkBox6);
-            this.groupBox8.Controls.Add(this.checkBox5);
-            this.groupBox8.Controls.Add(this.checkBox4);
+            this.groupBox8.Controls.Add(this.chcYawGyro);
+            this.groupBox8.Controls.Add(this.chcPitchGyro);
+            this.groupBox8.Controls.Add(this.chcRollGyro);
             this.groupBox8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox8.Location = new System.Drawing.Point(925, 583);
             this.groupBox8.Name = "groupBox8";
@@ -582,11 +662,41 @@
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Gyroscope";
             // 
+            // chcYawGyro
+            // 
+            this.chcYawGyro.AutoSize = true;
+            this.chcYawGyro.Location = new System.Drawing.Point(6, 89);
+            this.chcYawGyro.Name = "chcYawGyro";
+            this.chcYawGyro.Size = new System.Drawing.Size(47, 17);
+            this.chcYawGyro.TabIndex = 3;
+            this.chcYawGyro.Text = "YAW";
+            this.chcYawGyro.UseVisualStyleBackColor = true;
+            // 
+            // chcPitchGyro
+            // 
+            this.chcPitchGyro.AutoSize = true;
+            this.chcPitchGyro.Location = new System.Drawing.Point(6, 52);
+            this.chcPitchGyro.Name = "chcPitchGyro";
+            this.chcPitchGyro.Size = new System.Drawing.Size(61, 17);
+            this.chcPitchGyro.TabIndex = 2;
+            this.chcPitchGyro.Text = "PITCH";
+            this.chcPitchGyro.UseVisualStyleBackColor = true;
+            // 
+            // chcRollGyro
+            // 
+            this.chcRollGyro.AutoSize = true;
+            this.chcRollGyro.Location = new System.Drawing.Point(6, 20);
+            this.chcRollGyro.Name = "chcRollGyro";
+            this.chcRollGyro.Size = new System.Drawing.Size(54, 17);
+            this.chcRollGyro.TabIndex = 1;
+            this.chcRollGyro.Text = "ROLL";
+            this.chcRollGyro.UseVisualStyleBackColor = true;
+            // 
             // groupBox9
             // 
-            this.groupBox9.Controls.Add(this.checkBox9);
-            this.groupBox9.Controls.Add(this.checkBox8);
-            this.groupBox9.Controls.Add(this.checkBox7);
+            this.groupBox9.Controls.Add(this.chcYawMag);
+            this.groupBox9.Controls.Add(this.chcPitchMag);
+            this.groupBox9.Controls.Add(this.chcRollMag);
             this.groupBox9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox9.Location = new System.Drawing.Point(1142, 449);
             this.groupBox9.Name = "groupBox9";
@@ -595,123 +705,35 @@
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Magnetometer";
             // 
-            // checkBox1
+            // chcYawMag
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(6, 20);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(54, 17);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "ROLL";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chcYawMag.AutoSize = true;
+            this.chcYawMag.Location = new System.Drawing.Point(6, 87);
+            this.chcYawMag.Name = "chcYawMag";
+            this.chcYawMag.Size = new System.Drawing.Size(47, 17);
+            this.chcYawMag.TabIndex = 3;
+            this.chcYawMag.Text = "YAW";
+            this.chcYawMag.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // chcPitchMag
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(6, 53);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(61, 17);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "PITCH";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chcPitchMag.AutoSize = true;
+            this.chcPitchMag.Location = new System.Drawing.Point(6, 53);
+            this.chcPitchMag.Name = "chcPitchMag";
+            this.chcPitchMag.Size = new System.Drawing.Size(61, 17);
+            this.chcPitchMag.TabIndex = 2;
+            this.chcPitchMag.Text = "PITCH";
+            this.chcPitchMag.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // chcRollMag
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(6, 87);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(47, 17);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "YAW";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(6, 20);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(54, 17);
-            this.checkBox4.TabIndex = 1;
-            this.checkBox4.Text = "ROLL";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(6, 52);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(61, 17);
-            this.checkBox5.TabIndex = 2;
-            this.checkBox5.Text = "PITCH";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // checkBox6
-            // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(6, 89);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(47, 17);
-            this.checkBox6.TabIndex = 3;
-            this.checkBox6.Text = "YAW";
-            this.checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // checkBox7
-            // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(6, 20);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(54, 17);
-            this.checkBox7.TabIndex = 1;
-            this.checkBox7.Text = "ROLL";
-            this.checkBox7.UseVisualStyleBackColor = true;
-            // 
-            // checkBox8
-            // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(6, 53);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(61, 17);
-            this.checkBox8.TabIndex = 2;
-            this.checkBox8.Text = "PITCH";
-            this.checkBox8.UseVisualStyleBackColor = true;
-            // 
-            // checkBox9
-            // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(6, 87);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(47, 17);
-            this.checkBox9.TabIndex = 3;
-            this.checkBox9.Text = "YAW";
-            this.checkBox9.UseVisualStyleBackColor = true;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(112, 21);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(90, 21);
-            this.textBox7.TabIndex = 4;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(112, 47);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(90, 21);
-            this.textBox8.TabIndex = 5;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(112, 74);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(90, 21);
-            this.textBox9.TabIndex = 6;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(112, 100);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(90, 21);
-            this.textBox10.TabIndex = 7;
+            this.chcRollMag.AutoSize = true;
+            this.chcRollMag.Location = new System.Drawing.Point(6, 20);
+            this.chcRollMag.Name = "chcRollMag";
+            this.chcRollMag.Size = new System.Drawing.Size(54, 17);
+            this.chcRollMag.TabIndex = 1;
+            this.chcRollMag.Text = "ROLL";
+            this.chcRollMag.UseVisualStyleBackColor = true;
             // 
             // groupBox10
             // 
@@ -722,27 +744,6 @@
             this.groupBox10.TabIndex = 24;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Camera";
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(64, 24);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(147, 21);
-            this.textBox11.TabIndex = 15;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(63, 50);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(147, 21);
-            this.textBox12.TabIndex = 16;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(63, 75);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(147, 21);
-            this.textBox13.TabIndex = 17;
             // 
             // comboBox3
             // 
@@ -854,9 +855,9 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEmergency;
+        private System.Windows.Forms.Button btnDisconnect;
+        private System.Windows.Forms.Button btnConnect;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label2;
@@ -867,39 +868,39 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPacRecei;
+        private System.Windows.Forms.TextBox txtPacEror;
+        private System.Windows.Forms.TextBox txtPacSent;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtHeading;
+        private System.Windows.Forms.TextBox txtSpeed;
+        private System.Windows.Forms.TextBox txtCompass;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chcYawAcc;
+        private System.Windows.Forms.CheckBox chcPitchAcc;
+        private System.Windows.Forms.CheckBox checkRollAcc;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox chcYawGyro;
+        private System.Windows.Forms.CheckBox chcPitchGyro;
+        private System.Windows.Forms.CheckBox chcRollGyro;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.CheckBox chcYawMag;
+        private System.Windows.Forms.CheckBox chcPitchMag;
+        private System.Windows.Forms.CheckBox chcRollMag;
+        private System.Windows.Forms.TextBox txtGPS;
+        private System.Windows.Forms.TextBox txtEDF;
+        private System.Windows.Forms.TextBox txtEMU;
+        private System.Windows.Forms.TextBox txtNavstate;
+        private System.Windows.Forms.TextBox txtGPSmode;
+        private System.Windows.Forms.TextBox txtLongi;
+        private System.Windows.Forms.TextBox txtLatt;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.GroupBox groupBox11;

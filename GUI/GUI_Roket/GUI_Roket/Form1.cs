@@ -28,7 +28,7 @@ namespace GUI_Roket
         public GCS()
         {
             InitializeComponent();
-            button2.Enabled = false;
+            btnDisconnect.Enabled = false;
             //button3.Enabled = false;
             //button4.Enabled = false;
             //richTextBox2.Text = "Mencoba Koneksi kearduino !";
@@ -53,7 +53,7 @@ namespace GUI_Roket
             {
                // richTextBox2.Text = "Koneksi Arduino Gagal !";
             }
-            button1.Enabled = false;
+            btnConnect.Enabled = false;
             //button2.Enabled = false;
             //button3.Enabled = true;
             //button4.Enabled = false;
@@ -83,14 +83,17 @@ namespace GUI_Roket
 
         private void button2_Click(object sender, EventArgs e)
         {
-            button1.Enabled = true;
-            button2.Enabled = false;
+            btnConnect.Enabled = true;
+            btnDisconnect.Enabled = false;
             //button3.Enabled = false;
             //button4.Enabled = true;
             myport.Close();
             //richTextBox2.Text = "Koneksi Arduino Terputus !";
         }
 
-        
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+
+        }
     }
 }
